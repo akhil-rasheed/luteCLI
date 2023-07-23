@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 PROCESS_FOLDER_PATH = args.folder_path
 
-CLIENT_ID = 'a8f4a5a9ad14447c84fe7badb8b573bb'
+CLIENT_ID = '<REPLACE YOUR CLIENT ID>'
 REDIRECT_URI = 'http://localhost:8000/callback'
 SCOPE = 'playlist-read-private playlist-modify-public'
 FOLDER_PATH = './playlists'

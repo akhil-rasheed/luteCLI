@@ -1,0 +1,4 @@
+colorama==0.4.4
+Flask==2.0.1
+spotipy==2.25.0
+eyed3==0.9.7
