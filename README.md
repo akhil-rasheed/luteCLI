@@ -23,15 +23,12 @@ Set up Spotify API credentials:
 
 Usage
     Open a terminal or command prompt and navigate to the project directory.
-    To process the local music files and create text files with song titles, run the following command:
+    To process the local music files and create the playlists, run the following command:
 
     python process.py --folder-path <path_to_your_mp3_folder>
 
 Replace <path_to_your_mp3_folder> with the path to the folder containing your MP3 files.
 
-After processing the music files, you can transfer the songs to Spotify. To do this, run the main script:
-
-    python transfer.py --folder-path <path_to_your_mp3_folder>
 
 Follow the authentication instructions that appear in your web browser. The script will prompt you to log in to your Spotify account and grant access to create playlists.
 
