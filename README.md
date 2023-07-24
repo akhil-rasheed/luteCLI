@@ -25,7 +25,7 @@ Usage
     Open a terminal or command prompt and navigate to the project directory.
     To process the local music files and create the playlists, run the following command:
 
-    python process.py --folder-path <path_to_your_mp3_folder>
+    python transfer.py --folder-path <path_to_your_mp3_folder>
 
 Replace <path_to_your_mp3_folder> with the path to the folder containing your MP3 files.
 
