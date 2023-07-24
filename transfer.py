@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 PROCESS_FOLDER_PATH = args.folder_path
 
-CLIENT_ID = '<REPLACE YOUR CLIENT ID>'
+CLIENT_ID = 'a8f4a5a9ad14447c84fe7badb8b573bb'
 REDIRECT_URI = 'http://localhost:8000/callback'
 SCOPE = 'playlist-read-private playlist-modify-public'
 FOLDER_PATH = './playlists'
@@ -77,6 +77,7 @@ def add_track_to_playlist(sp, playlist_id, track_uri):
 def create_playlists(sp):
     """Create playlists from text files in the specified folder."""
     for file_name in os.listdir(FOLDER_PATH):
+        print(file_name)
         if file_name.endswith('.txt'):
             file_path = os.path.join(FOLDER_PATH, file_name)
             playlist_name = 'LuteCLI: ' + os.path.splitext(file_name)[0] 
@@ -96,6 +97,7 @@ def run_process():
 
 @app.route('/callback')
 def handle_callback():
+    run_process()
     code = request.args.get('code')
     access_token = sp_oauth.get_access_token(code)
     sp = spotipy.Spotify(auth=access_token)
